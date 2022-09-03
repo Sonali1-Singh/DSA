@@ -16,3 +16,5 @@ C++ Basics -
    }
 3. To insert value in vector- vector.push_back();
 4. Queue methods: push(), pop(), front().
+5. To create adjajency List of graph having nodes as string with path values as double => map<string,vector<pair<string,double>>> adj;
+6. To create visited array of string => set<string> vis; [Leetcode](https://leetcode.com/problems/evaluate-division/)
