@@ -18,3 +18,8 @@ C++ Basics -
 4. Queue methods: push(), pop(), front().
 5. To create adjajency List of graph having nodes as string with path values as double => map<string,vector<pair<string,double>>> adj;
 6. To create visited array of string => set<string> vis; [Leetcode](https://leetcode.com/problems/evaluate-division/)
+7. middle point = l+(h-l)/2 to avoid overflow
+8. Edge cases to consider - (1) Can the number repeats, (2) Are in sorted order, (3)Can they be negative numbers, (4)Base conditions like 0, 
+   (5)Integer overflow (>10^9) while adding, multiplying, (6) Input has no value or single value.
+9. 
+
