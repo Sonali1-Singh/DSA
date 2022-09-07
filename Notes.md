@@ -21,5 +21,5 @@ C++ Basics -
 7. middle point = l+(h-l)/2 to avoid overflow
 8. Edge cases to consider - (1) Can the number repeats, (2) Are in sorted order, (3)Can they be negative numbers, (4)Base conditions like 0, 
    (5)Integer overflow (>10^9) while adding, multiplying, (6) Input has no value or single value.
-9. 
+9. Use <span style="color:orange;">priority_queue<int> pq</span>, when you need to remove maximum element.
 
