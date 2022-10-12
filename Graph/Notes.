@@ -1,3 +1,0 @@
-To create adjajency List of graph having nodes as string with path values as double => map<string,vector<pair<string,double>>> adj;
-To create visited array of string => set<string> vis;
- questions need to look on for revision - [Leetcode](https://leetcode.com/problems/evaluate-division/)
