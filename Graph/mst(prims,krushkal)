@@ -1,0 +1,39 @@
+// Prims Algo
+int spanningTree(int V, vector<vector<int>> adj[])
+    {
+        // code here
+        int n = V;
+        bool vis[n];
+        //memset(vis,false,n);
+        int wt[n+1];   //minimum edge weight to reach ith node
+        for(int i=1;i<n+1;i++){
+            vis[i]=false;
+            wt[i]=1e9+1;
+        }
+        set<vector<int>> s;   //stores (weight,node) in sorted order of edge weight
+        int ans=0;
+        wt[0]=0;
+        s.insert({0,0});   //weight,src
+        while(!s.empty()){
+           auto x = *(s.begin());
+            s.erase(x);
+            //cout<<x[0]<<" "<<x[1];
+            int src = x[1];
+            vis[src]=true;
+            ans+=x[0];
+            for(auto n: adj[src]){
+               // cout<<src<<" "<<n[0]<<" "<<n[1]<<" "<<wt[n[0]];
+                if(!vis[n[0]] && wt[n[0]]>n[1]){
+                    //cout<<src<<"%"<<n[0]<<"%"<<n[1];
+                        s.erase({wt[n[0]],n[0]});
+                        wt[n[0]]=n[1];
+                        s.insert({wt[n[0]],n[0]});
+                    
+                }
+            }
+        }
+        return ans;
+    }
+//----------------------Krushkal's Algo -----------------
+// In this, we have to sort egdes({wt,{u,v}}) wrt wt. Then iterate over edges 
+// and take edges if it is not forming loop. To check this, use DSU(Disjoint Set Union).
