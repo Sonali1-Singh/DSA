@@ -6,3 +6,5 @@ Question Links for revision -
 [Google Ques1](https://codeforces.com/contest/1245/problem/D)
 [Solution](https://codeforces.com/contest/1245/my)
 [CodeForces1](https://codeforces.com/problemset/problem/295/B)
+[Parallel courses leetcode solution video](https://www.youtube.com/watch?v=NY9v8AGSnyM)
+
